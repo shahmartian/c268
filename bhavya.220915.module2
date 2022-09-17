@@ -1,0 +1,113 @@
+    1  ls
+    2  pwd
+    3  mkdir c268
+    4  ls
+    5  history
+    6  ls
+    7  mkdir Bhavya
+    8  ls
+    9  pwd
+   10  ls
+   11  gitconfig
+   12  gitconfig username
+   13  pwd
+   14  ls
+   15  rm *
+   16  ls
+   17  ls /
+   18  ls -l
+   19  ls -l /
+   20  man ls
+   21  cd
+   22  pwd
+   23  cd /usr/bin
+   24  ls
+   25  pwd
+   26  cd/usr/
+   27  cd /usr
+   28  ls
+   29  cd/usr/bin
+   30  cd
+   31  ls
+   32  pwd
+   33  ls
+   34  cd c268/
+   35  ls
+   36  pwd
+   37  ls
+   38  cd /home
+   39  mkdir c268R1
+   40  cd
+   41  ls
+   42  cd c268/
+   43  cd
+   44  touch wiley.txt
+   45  ls
+   46  ls -ltr
+   47  ls -l
+   48  su root
+   49  q
+   50  pwd
+   51  ls
+   52  uname
+   53  uname -a
+   54  [ec2-user@ip-172-31-8-166 ~]$ uname
+   55   uname -a
+   56  cd /var/log
+   57  cd
+   58  cd /var/log
+   59  cd ..
+   60  cd
+   61  history
+   62  sudo yum install git
+   63  git config
+   64  git version
+   65  git config user.name
+   66  git config user.name "shahmartian"
+   67  git config --global user.name "shahmartian"
+   68  git config --global user.email "ms.bhavya27@gmail.com"
+   69  git config user.name
+   70  git config user.email
+   71  clear
+   72  pwd
+   73  cd /var/log
+   74  cd ..
+   75  pwd
+   76  ls
+   77  ls -ltr
+   78  ls -l
+   79  cd /
+   80  cd ..
+   81  cd ~
+   82  pwd
+   83  cd /
+   84  pwd
+   85  cd /home
+   86  pwd
+   87  cd /home
+   88  pwd
+   89  cd ..
+   90  pwd
+   91  cd /home
+   92  ls
+   93  cd /ec2-user
+   94  cd ec2-user
+   95  pwd
+   96  ls
+   97  cd /var
+   98  ls -l
+   99  man -ls
+  100  ms ls
+  101  man ls
+  102  ls -S
+  103  ls -s
+  104  cd ..
+  105  pwd
+  106  cd ~
+  107  ls -s
+  108  pws
+  109  pwd
+  110  ls -l
+  111  ls -s
+  112  cat c268
+  113  history > name.YYMMDD.module2
