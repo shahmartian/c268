@@ -1,0 +1,116 @@
+    1  ls
+    2  pwd
+    3  mkdir c268
+    4  ls
+    5  history
+    6  ls
+    7  mkdir Bhavya
+    8  ls
+    9  pwd
+   10  history
+   11  clear
+   12  history
+   13  traceroute google.com
+   14  netstat –a
+   15  traceroute google.com
+   16  netstat -a
+   17  clear
+   18  ls
+   19  STOCK=AAPL
+   20  echo $STOCK
+   21  STOCK="${STOCK}_US"
+   22  echo $STOCK
+   23  PRICE=290.84
+   24  echo "The current price of ${STOCK} is ${PRICE}
+   25  echo "The current price of ${STOCK} is ${PRICE}"
+   26  WHOAMI=BHAVYA
+   27  echo $WHOAMI
+   28  SERVERTYPE=$(uname)
+   29  echo $SERVERTYPE
+   30  SERVERTYPE=`uname`
+   31  echo $SERVERTYPE
+   32  CMD="uname-i"
+   33  echo $CMD
+   34  echo $uname-i
+   35  echo $uname -i
+   36  uname -i
+   37  echo $CMD
+   38  CMD="uname-i"
+   39  CMD
+   40  echo $CMD
+   41  $echo "CMD"
+   42  echo $CMD
+   43  CMD="uname-i"
+   44  echo `$CMD`
+   45  CMD="uname -i"
+   46  echo `$CMD`
+   47  cd..
+   48  cd ..
+   49  pwd
+   50  cd ~
+   51  pwd
+   52  mkdir svripts
+   53  echo $PATH
+   54  export PATH="$PATH/svripts"
+   55  echo $PATH
+   56  export PATH="$PATH/svripts/"
+   57  echo $PATH
+   58  ls
+   59  em -ef Algo1/
+   60  rm -rf Algo1/
+   61  ls
+   62  mkdir Payment1
+   63  ls
+   64  cd Payment1/
+   65  mkdir logs configuration scripts
+   66  ls
+   67  cd scripts/
+   68  touch start.sh
+   69  cd ..
+   70  cd configuration/
+   71  touch instance.properties
+   72  ls -lrt
+   73   chmod U+X G-W instance.properties 
+   74   chmod U+X instance.properties 
+   75   chmod u+x instance.properties 
+   76  ls -lrt
+   77   chmod u+x g-w instance.properties 
+   78  chmod u=rwx, og=r instance.properties 
+   79  chmod u=rwx,og=r instance.properties 
+   80  ls -lrt
+   81  cd ..
+   82  ls
+   83  cd scripts/
+   84  ls
+   85  chmod u=rwx,og=rw scripts/
+   86  chmod u=rwx,g=rwx,o=x start.sh 
+   87  ls -lrt
+   88  cd ~
+   89  pwd
+   90  msn cat > cat.output
+   91  man cat > cat.output
+   92  ls
+   93  ls -lrt
+   94  chmod u=r,g=rwx,o=r cat.output 
+   95  ls -ltr
+   96  cd ..
+   97  cd ~
+   98  pwd
+   99  ls
+  100  rm -rf Payment1/
+  101  ls
+  102  rm cat.output 
+  103  ls
+  104  mkdir temp
+  105  ls
+  106  cd temp/
+  107  pwd
+  108  MYTEMP=/home/ec2-user/temp
+  109  echo $MYTEMP
+  110  MYTEMP=""
+  111  echo $MYTEMP
+  112  cd ..
+  113  rmdir temp/
+  114  ls
+  115  cd WileyEdge/
+  116  history > bhavya.220919.module4
