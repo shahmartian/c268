@@ -1,0 +1,312 @@
+    1  ls
+    2  pwd
+    3  mkdir c268
+    4  ls
+    5  history
+    6  ls
+    7  mkdir Bhavya
+    8  ls
+    9  pwd
+   10  history
+   11  clear
+   12  history
+   13  traceroute google.com
+   14  netstat –a
+   15  traceroute google.com
+   16  netstat -a
+   17  clear
+   18  ls
+   19  STOCK=AAPL
+   20  echo $STOCK
+   21  STOCK="${STOCK}_US"
+   22  echo $STOCK
+   23  PRICE=290.84
+   24  echo "The current price of ${STOCK} is ${PRICE}
+   25  echo "The current price of ${STOCK} is ${PRICE}"
+   26  WHOAMI=BHAVYA
+   27  echo $WHOAMI
+   28  SERVERTYPE=$(uname)
+   29  echo $SERVERTYPE
+   30  SERVERTYPE=`uname`
+   31  echo $SERVERTYPE
+   32  CMD="uname-i"
+   33  echo $CMD
+   34  echo $uname-i
+   35  echo $uname -i
+   36  uname -i
+   37  echo $CMD
+   38  CMD="uname-i"
+   39  CMD
+   40  echo $CMD
+   41  $echo "CMD"
+   42  echo $CMD
+   43  CMD="uname-i"
+   44  echo `$CMD`
+   45  CMD="uname -i"
+   46  echo `$CMD`
+   47  cd..
+   48  cd ..
+   49  pwd
+   50  cd ~
+   51  pwd
+   52  mkdir svripts
+   53  echo $PATH
+   54  export PATH="$PATH/svripts"
+   55  echo $PATH
+   56  export PATH="$PATH/svripts/"
+   57  echo $PATH
+   58  ls
+   59  em -ef Algo1/
+   60  rm -rf Algo1/
+   61  ls
+   62  mkdir Payment1
+   63  ls
+   64  cd Payment1/
+   65  mkdir logs configuration scripts
+   66  ls
+   67  cd scripts/
+   68  touch start.sh
+   69  cd ..
+   70  cd configuration/
+   71  touch instance.properties
+   72  ls -lrt
+   73   chmod U+X G-W instance.properties 
+   74   chmod U+X instance.properties 
+   75   chmod u+x instance.properties 
+   76  ls -lrt
+   77   chmod u+x g-w instance.properties 
+   78  chmod u=rwx, og=r instance.properties 
+   79  chmod u=rwx,og=r instance.properties 
+   80  ls -lrt
+   81  cd ..
+   82  ls
+   83  cd scripts/
+   84  ls
+   85  chmod u=rwx,og=rw scripts/
+   86  chmod u=rwx,g=rwx,o=x start.sh 
+   87  ls -lrt
+   88  cd ~
+   89  pwd
+   90  msn cat > cat.output
+   91  man cat > cat.output
+   92  ls
+   93  ls -lrt
+   94  chmod u=r,g=rwx,o=r cat.output 
+   95  ls -ltr
+   96  cd ..
+   97  cd ~
+   98  pwd
+   99  ls
+  100  rm -rf Payment1/
+  101  ls
+  102  rm cat.output 
+  103  ls
+  104  mkdir temp
+  105  ls
+  106  cd temp/
+  107  pwd
+  108  MYTEMP=/home/ec2-user/temp
+  109  echo $MYTEMP
+  110  MYTEMP=""
+  111  echo $MYTEMP
+  112  cd ..
+  113  rmdir temp/
+  114  ls
+  115  cd WileyEdge/
+  116  history > bhavya.220919.module4
+  117  ls
+  118  cp bhavya.220919.module4 /home/ec2-user/c268
+  119  cd ..
+  120  cd c268/
+  121  ls
+  122  git add bhavya.220919.module4 
+  123  git status
+  124  git commit -m "module 4 exercise"
+  125  git push
+  126  history
+  127  grep "svr"
+  128  pwd
+  129  cd ..
+  130  pwd
+  131  cd /var/log
+  132  ls
+  133  cd ..
+  134  ls
+  135  ls -ltr
+  136  ls -s
+  137  ls -ltrs
+  138  ls -ltrS
+  139  ls -ltrs
+  140  cd 
+  141  cd ?
+  142  cd /
+  143  cd ~
+  144  cd
+  145  pwd
+  146  cd /home
+  147  pwd
+  148  cd ..
+  149  pwd
+  150  cd ~
+  151  pwd
+  152  cd ..
+  153  pwd
+  154  man ls
+  155  cd /var
+  156  ls -ltrS
+  157  ls -ltr -S
+  158  ls -ltr -s
+  159  uname --version
+  160  ifconfig
+  161  history
+  162  cd ~
+  163  pwd
+  164  ls
+  165  mkdir Algo1
+  166  cd Algo1/
+  167  mkdir config bin logs scripts
+  168  cd config/
+  169  touch config.config variables
+  170  ls
+  171  cd ..
+  172  cd scripts/
+  173  touch start.sh stop.sh admin.sh
+  174  ls
+  175  cd ..
+  176  cd logs/
+  177  touch today.log
+  178  ls
+  179  cd ..
+  180  ls
+  181  ls -R
+  182  man ls
+  183  ls -R
+  184  cd Algo1/
+  185  ls
+  186  cd config/
+  187  rm variables 
+  188  ls
+  189  cd ..
+  190  rmdir 
+  191  ls
+  192  rmdir bin/
+  193  ls
+  194  cd ~
+  195  mkdir bin /home/ec2-user/Algo1/
+  196  cd Algo1/
+  197  ls
+  198  cd ..
+  199  mkdir Algo1/bin
+  200  ls
+  201  cd A
+  202  cd Algo1/
+  203  ls
+  204  cd ..
+  205  mkdir Algo1/logs/oldlogs
+  206  cd Algo1/
+  207  cd logs/
+  208  ls
+  209  mkdir oldlogs/2019  oldlogs/2019
+  210  cd oldlogs/
+  211  ls
+  212  mkdir 2018 2017
+  213  ls
+  214  touch 2017/2017.log 2018/2018.log 2019/2019.log
+  215  cd 2019
+  216  ls
+  217  cd ~
+  218  rm -rf Algo1/logs/oldlogs
+  219  cd Algo1/
+  220  cd logs/
+  221  ls
+  222  cd ~
+  223  ls -ltr | grep ".sh"
+  224  ls -ltr | grep "*.sh"
+  225  ls -ltr
+  226  -lS
+  227  ls -lS
+  228  ls -lrS
+  229  ls -ltrS
+  230  ls -R
+  231  ls -ltr | grep "*.sh"
+  232  ls -ltrs | grep "*.sh"
+  233  ls | grep "*.sh"
+  234  ls | grep .sh
+  235  ls -L | grep .sh
+  236  ls -LR | grep .sh
+  237  nano .bashrc
+  238  source .bashrc
+  239  echo $BHAVYA
+  240  ls
+  241  cd ?
+  242  cd/
+  243  cd /
+  244  ls
+  245  cd etc/
+  246  nano environment
+  247  echo $PATH
+  248  vi .bashrc
+  249  vi .bash_profile
+  250  cd ~
+  251  vi .bashrc
+  252  env
+  253  $BHAYA
+  254  $BHAVYA
+  255  env
+  256  vi .bash_profile
+  257  vimtutor
+  258  vi hello
+  259  cat hello
+  260  vim hello
+  261  cat hello
+  262  vi hello
+  263  ls
+  264  vi Algo1/
+  265  man vs
+  266  vs man
+  267  vi hello
+  268  vi Algo1/
+  269  vi hello
+  270  vi hello1
+  271  clear
+  272  cd ~
+  273  vi newfile
+  274  ls newfile
+  275  clear
+  276  cd ~
+  277  vi newfile
+  278  ls newfile
+  279  vi newfile2
+  280  ls newfile2
+  281  vi newfile3
+  282  ls newfile3
+  283  vi newfile3
+  284  vi newfile4
+  285  cat newfile4
+  286  fg
+  287  cat newfile4
+  288  vi usingVi
+  289  ls -s usingVi 
+  290  ls -sh usingVi 
+  291  ls -S usingVi 
+  292  vi usingVi 
+  293  ls -s usingVi 
+  294  vi usingVi 
+  295  clear
+  296  ls 
+  297  ls
+  298  ls -lrt
+  299  ls -lS
+  300  ls -sh usingVi 
+  301  man ls
+  302  vi avengers
+  303  wc avengers 
+  304  man wc
+  305  vi cool
+  306  rm cool
+  307  ls
+  308  vi avengers 
+  309  mv avengers avengers.bhavya
+  310  ls
+  311  history > c268/ bhavya.avengers
+  312  history > c268/bhavya.avengers
