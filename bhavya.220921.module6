@@ -1,0 +1,63 @@
+    1  ps -ef
+    2  uname
+    3  $USER
+    4  echo $USER
+    5  ps -ef | grep ec2-user
+    6  ps -ef | grep $USER
+    7  ps -ef | grep -v $USER
+    8  ps $!
+    9  ps $$
+   10  ps -ef f
+   11  ps -ef user,pid,cmd
+   12  ps -eo user,pid,cmd
+   13  ps -eo pid > list
+   14  cat lcat list 
+   15  man ps
+   16  sleep 300 &
+   17  ps -ef | grep sleep
+   18  kill 16947
+   19  ps -ef | grep sleep
+   20  kill 16947
+   21  ps -ef | grep sleep
+   22  jobs
+   23  ps -ef | grep sleep
+   24  kill $!
+   25  ps -ef | grep sleep
+   26  sleep 50
+   27  sleep 50 &
+   28  kill 18081
+   29  ps -ef | grep sleep
+   30  sleep 50
+   31  ps -ef | grep sleep
+   32  kill 18087
+   33  jobs
+   34  fg %2
+   35  fg %3
+   36  fg %31
+   37  fg %1
+   38  jobs
+   39  ps -ef | grep sleep
+   40  top
+   41  top | grep root
+   42  top -u 
+   43  top -u root
+   44  man top
+   45  top
+   46  man top
+   47  ping yahoo.com
+   48  traceroute yahoo.com > yahoo.route
+   49* cat yahoo.route less
+   50  less yahoo.route
+   51  ln -s yahoo.route route
+   52  less route
+   53  netstat -a > output
+   54  cat output
+   55  netstat -a
+   56  mkdir network
+   57  ls
+   58  mv route output network/
+   59  cd network/
+   60  ls
+   61  ifcongif -a
+   62  ifconfig -a
+   63  history > bhavya.220921.module6
