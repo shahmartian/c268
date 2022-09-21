@@ -1,0 +1,43 @@
+    1  TEXT="The number is"
+    2  for TEXT in {1..25}; do echo $! ; done
+    3  for TEXT in {1..25}; do echo $TEXT ; done
+    4  for i in {1..25}; do echo $TEXT $i; done
+    5  TEXT="The number is"
+    6  for i in {1..25}; do echo $TEXT $i; done
+    7  for i in {1..25}; do echo $TEXT $i; done > forloop.out
+    8  cat forloop.out 
+    9  sed 's/The number is\The number is not/g' forloop.out > forloop2.out
+   10  sed 's/is/is\ not/g' forloop.out > forloop2.out
+   11  cat forloop2.out 
+   12  i=1
+   13  if(( $i==1 )); then echo "i is equal to 1"; elif(($i==2)); then echo "i is equal to 2"; else echo "i is neither 1 or 2"; fi
+   14  i=1 if(( $i==1 ))
+   15  i=1
+   16  if(( $i==1 )); then echo "i is equal to 1"; elif(($i==2)); then echo "i is equal to 2"; else echo "i is neither 1 or 2"; fi
+   17  if (( $i==1)); then echo "i is equal to 2
+
+   18  i=1
+   19  if(( $i==1 )); then echo "i is equal to 1"; elif(($i==2)); then echo "i is equal to 2"; else echo "i is neither 1 or 2"; if(( $i==1 )); then echo "i is equal to 1"; elif(($i==2)); then echo "i is equal to 2"; else echo "i is neither 1 or 2"; fi
+   20  i=5
+   21   if(( $i==1 )); then echo "i is equal to 1"; elif(($i==2)); then echo "i is equal to 2"; else echo "i is neither 1 or 2"; fi
+   22  TODAY=21.09.2022
+   23  date
+   24  GENDAT=$TODAY
+   25  echo `$GENDATE`
+   26  GENDATE=`TODAY`
+   27  GENDATE=`$TODAY`
+   28  date
+   29  GENDATE="%y.%m.%d"
+   30  echo $GENDATE
+   31  echo `$GENDATE`
+   32  GENDATE="date+%y.%m.%d"
+   33  echo `$GENDATE`
+   34  echo '$GENDATE'
+   35  echo `$GENDATE`
+   36  GENDATE=`date+%y.%m.%d`
+   37  GENDATE=`date +%y.%m.%d`
+   38  echo $GENDATE
+   39  output.log=~/$USER.man.$GENDATE.log
+   40  touch output.log.$GENDATE
+   41  ls
+   42  history > bhavya.220921.module1112
