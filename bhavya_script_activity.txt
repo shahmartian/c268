@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Author	: Bhavya
+# Activity	: 1
+# Description	: Simple Shell Script
+
+CURRENTWORKINGDIR=`pwd` #Current working dir
+NUMBEROFFILESINDIR=`ls | wc -l` #number of files in dir
+BIGGESTFILE=`ls -S | awk '{print}' | head -1` #ls -S | head -1` biggest file
+
+
+echo "USERNAME= ${USER}" #Username
+echo "CURRENTDATE= $(date)" #Current date
+echo "TIME= $(date +%T)" #display time other method:echo "TIME= $(date +%H:%M:%S)"
+echo "Current Working Directory: $CURRENTWORKINGDIR" #current workinh directory
+echo "Number of Files in Directory: $NUMBEROFFILESINDIR" #number of files
+echo "Biggest file: $BIGGESTFILE" #biggest files
+
+exit 0
