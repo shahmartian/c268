@@ -1,0 +1,159 @@
+#!/bin/bash
+
+#ECHO COMMAND
+echo Hello World! #Just echoing the message
+
+#VARIABLES
+NAME="Bhavya" #Define Variable
+echo "My name is $NAME" # ${NAME} will also echo the input
+# EXAMPLE: echo "My name is ${NAME}"
+
+#USER Input
+read -p "Enter your name: " YOURNAME #Read -p will store the value in YOURNAME and will be displayed as a form of variable value in echoing
+echo "Hello $YOURNAME, Nice to meet you!"
+
+#SIMPLE IF STATEMENT
+SNAME="SBhavya" #Define Variable
+if [ "$SNAME" == "SBhavya" ]
+then
+	echo "Your name is SBhavya"
+fi
+
+#IF ELSE STATMENT
+DNAME="DaruwalaViraj" #Define Variable
+if [ "$DNAME" == "Viraj" ]
+then
+        echo "Your name is Viraj"
+else
+        echo "Your name is Not Viraj"
+fi
+
+#ELSE IF (elif) STATMENT
+YNAME="Brian" #Define Variable
+if [ "$YNAME" == "Brad" ]
+then
+        echo "Your name is Brad"
+elif [ "$YNAME" == "Jack" ]
+then
+	echo "Your name is Jack"
+else
+        echo "Your name is Not Brad or Jack"
+fi
+
+#COMPARISON
+#ONE WAY IS TO DEFINE VARIABLE AND USE COMPARISION OR TO SAVE USER INPUT IN DEFINED VARIABLE IN READ LINE
+#NUM1=3 Variables can be defined
+#NUM2=5 Variables can be defined
+read -p "Enter Number 1:" NUM1 #Inputs from user can be stored in NUM1
+read -p "Enter Number 2:" NUM2 #Inputs from user can be stored in NUM2
+if [ $NUM1 -gt $NUM2 ]
+then
+	echo "$NUM1 is Greater than $NUM2"
+else
+	echo "$NUM1 is less than $NUM2"
+fi
+
+#COMPARISION COMMANDS
+# val1 -eq val2 Returns true if the values are equal
+# val1 -ne val2 Returns true if the values are not equal
+# val1 -gt val2 Returns true if val1 is greater than val2
+# val1 -ge val2 Returns true if val1 is greater than or equal to val2
+# val1 -lt val2 Returns true if val1 is less than val2
+# val1 -le val2 Returns true if val1 is less than or equal to val2
+
+#FILE CONDITIONS
+read -p "Search the file or directory:" FILENAME
+#FILE="text.txt" #Define variable
+if [ -f "$FILENAME" ]
+then
+	echo "$FILENAME is a File"
+elif
+	[ -d "$FILENAME" ]
+then
+	echo "$FILENAME is a Directory"
+else
+	echo "$FILENAME is not a File nor Directory"
+fi
+
+#FILE CONDITION COMMANDS
+# -d file   True if the file is a directory
+# -e file   True if the file exists (note that this is not particularly portable, thus -f is generally used)
+# -f file   True if the provided string is a file
+# -g file   True if the group id is set on a file
+# -r file   True if the file is readable
+# -s file   True if the file has a non-zero size
+# -u    True if the user id is set on a file
+# -w    True if the file is writable
+# -x    True if the file is an executable
+
+#CASE STATEMENTS
+read -p "ARE YOU 21 or OVER? Y/N" ANS
+case "$ANS" in
+	[yY] | [yY][eE][sS])
+		echo "You can have a drink :)"
+		;;
+		[nN] | [nN][oO])
+			echo "SORRY NO drinking"
+			;;
+		*)
+			echo "Please enter y/yes or n/no"
+			;;
+	esac
+
+#AGE OF DRINKING IN IF ELSE STATEMENT
+read -p "Enter your age:" AGE
+AGELIMIT="21"
+if [ $AGE -ge $AGELIMIT ]
+then
+	echo "YOU CAN DRINK"
+else
+	echo "YOU ARE UNDERAGE"
+fi
+
+#SIMPLE FOR LOOP
+COUNTRY="Canada USA India UK"
+for COUNTRY in $COUNTRY
+do
+	echo "Hello $COUNTRY"
+done
+
+#FOR LOOP TO RENAME FILES
+#FILES=$(ls *.txt)
+#NEW="new"
+#for FILES in $FILES
+#do
+#	echo "Renaming $FILES to new-$FILES"
+#	mv $FILES $NEW-$FILES
+#done
+
+#WHILE LOOP-READ THROUGH A FILE LINE BY LINE
+LINE=1
+while read -r CURRENTLINE
+do
+	echo "$LINE: $CURRENTLINE"
+	((LINE++))
+done < "./new-new-new-one.txt"
+
+#FUNCTIONS
+function sayHello ()
+{
+echo "Hello World"
+}
+sayHello
+
+#Function with Parameters
+function greet()
+{
+echo "Hello I am $1 and my age is $2 " #Positional Parameters
+}
+
+greet "Brad" "34"
+
+#CREATING FOLDER AND WRITE TO A FILE
+#mkdir ~/hellodir
+#touch "~/hellodir/world.txt"
+#echo "Hello World touch file" >> "~/hellodir/world.txt"
+#echo "Created hellodir/world.txt"
+
+
+exit 0
