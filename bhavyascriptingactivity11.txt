@@ -4,17 +4,17 @@
 #Description	: Read file
 #Author		: Bhavya
 
-filename="/home/ec2-user/scripts/activity11.txt"
+filename='/home/ec2-user/scripts/activity11.txt' #Absolute path of the file
 arr=()
-while read line;
+while read line; #Read the file line by line
 do 
-	arr+=($line)
+	arr+=($line) 
 done < $filename
 	echo "List: ${arr[@]}" 
-echo "Reverse List:" 
-echo ${arr[@]} | tr " " "\n" | sort -nur | tr "\n" " " #echo ${arr[@]} | tr " " "\n" | sort -nur
+	echo "Reverse List: $(echo ${arr[@]} | tr " " "\n" | sort -nur | tr "\n" " " )" #echo unique numbers in reverse order
 
-echo " "
+#echo ${arr[@]} | tr " " "\n" | sort -nur | tr "\n" " " #echo ${arr[@]} | tr " " "\n" | sort -nur
+# echo " " necessary if the above script executed with echoing "reverse list"
 
 
 
